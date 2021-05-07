@@ -1,3 +1,15 @@
+/*
+color palette:
+
+#013220	darkest green
+#5e807f	steel teal
+#082D0F	dark green
+#17B890	mountain meadow
+#DEE5E5	gainsboro
+
+https://coolors.co/dee5e5-9dc5bb-17b890-5e807f-082d0f
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -8,8 +20,8 @@ body {
   justify-content: center;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #fbf9de;
-  color: #333;
+  background-color: #013220;
+  color: #dee5e5;
   font-size: 16px;
 }
 
@@ -27,10 +39,13 @@ body {
 }
 
 .fa-github-alt {
-  color: #f86d58;
+  color: #17b890;
+  text-shadow: none;
 }
 
 img {
+  border: 1px solid #17b890;
+  box-shadow: rgba(23, 184, 144, 0.5) 5px 10px 15px;
   max-width: 100%;
   height: auto;
 }
@@ -42,11 +57,12 @@ h1 {
   font-size: 3.5em;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  background-color: #483978;
-  color: #fff;
+  background-color: #5e807f;
+  color: #dee5e5;
   text-transform: uppercase;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  text-shadow: 2px 2px 5px #17b890;
 }
 
 .badge {
@@ -64,7 +80,7 @@ h1 {
 .circle {
   width: 20px;
   height: 20px;
-  background-color: #483978;
+  background-color: #5e807f;
   border-radius: 100%;
   z-index: 99;
   align-self: center;
@@ -80,7 +96,7 @@ h1 {
 h3 {
   width: 100%;
   text-align: center;
-  color: #f86d58;
+  color: #17b890;
 }
 
 ul {
@@ -107,8 +123,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #483978;
-  color: white;
+  background-color: #5e807f;
+  color: #dee5e5;
   font-size: 18px;
   padding-bottom: 2em;
 }
@@ -135,7 +151,7 @@ ul {
   width: 100%;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #9b8dc9;
+  border-bottom: 1px solid #dee5e5;
   padding-bottom: 19px;
 }
 
@@ -144,11 +160,11 @@ ul {
   margin-top: 1em;
   padding: 1em;
   margin-bottom: 1em;
-  border: 2px solid #483978;
+  border: 2px solid #17b890;
 }
 
 section.repo-data {
-  background-color: #fff;
+  background-color: #082d0f;
   padding: 2em;
   padding-bottom: 1em;
 }
@@ -157,7 +173,7 @@ section.repo-data {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #fff;
+  background-color: #082d0f;
   margin-top: 0;
   padding: 2em;
 }
@@ -173,7 +189,7 @@ section.repo-data {
 .repo-list li {
   width: 90%;
   margin: 1em 0;
-  border: 1px solid #f86d58;
+  border: 1px solid #17b890;
   padding: 0.5em;
 }
 
@@ -209,8 +225,8 @@ section.repo-data {
   margin-top: 2em;
   cursor: pointer;
   display: block;
-  background-color: #483978;
-  border: 1px solid #483978;
+  background-color: #5e807f;
+  border: 1px solid #5e807f;
 }
 
 .repo-data .visit:hover {
@@ -220,7 +236,7 @@ section.repo-data {
 
 .button-container {
   width: 100%;
-  background-color: #fff;
+  background-color: #082d0f;
   padding-left: 2em;
   padding-bottom: 2em;
 }
