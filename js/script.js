@@ -10,7 +10,6 @@ const filterInput = document.querySelector(".filter-repos");
 const getProfile = async function () {
     const res = await fetch(`https://api.github.com/users/${username}`);
     const profile = await res.json();
-    // console.log(profile);
     displayProfile(profile);
 };
 getProfile();
@@ -39,7 +38,6 @@ const displayProfile = function (profile) {
 const getRepos = async function () {
     const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
     const repos = await res.json();
-    // console.log(repos);
     displayRepos(repos);
 };
 getRepos();
@@ -68,18 +66,15 @@ repoList.addEventListener("click", function (e) {
 const getRepoInfo = async function (repoName) {
     const res = await fetch(`https://api.github.com/repos/${username}/${repoName}`);
     const repoInfo = await res.json();
-    // console.log(repoInfo);
 
     // get languages
     const fetchLanguages = await fetch(repoInfo.languages_url);
     const languageData = await fetchLanguages.json();
-    // console.log(languageData);
 
     // make a list of languages
     const languages = [];
     for (const language in languageData) {
         languages.push(language);
-        // console.log(languages);
     }
     displayRepoInfo(repoInfo, languages);
 };
