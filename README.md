@@ -16,7 +16,7 @@ Gallery of all my public GitHub repos.
 * HTML
 * CSS
 * JavaScript
-* REST APIs
+* Fetch API
 
 ## Acknowledgements
 Project idea: [Skillcrush](https://skillcrush.com)<br>
